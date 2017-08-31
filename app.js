@@ -1,4 +1,5 @@
 var express = require('express');
+var cors = require('cors');
 var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -7,6 +8,7 @@ var bodyParser = require('body-parser');
 var todos = require('./routes/todos');
 
 var app = express();
+app.use(cors());
 
 
 // uncomment after placing your favicon in /public

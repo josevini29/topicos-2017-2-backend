@@ -2,8 +2,33 @@ var express = require('express');
 var todos = express.Router();
 
 //Definições das rotas
-var todoIndex = 0;
-var todosList = [];
+var todoIndex = 4;
+var todosList = [
+    {
+        "title": "Disciplina de Tópicos",
+        "description": "Vamos aprender Node e React",
+        "id": 0,
+        "completed": false
+    },
+    {
+        "title": "Disciplina de Tópicos",
+        "description": "Vamos aprender Node e React",
+        "id": 1,
+        "completed": false
+    },
+    {
+        "title": "Disciplina de Tópicos",
+        "description": "Vamos aprender Node e React",
+        "id": 2,
+        "completed": false
+    },
+    {
+        "title": "Disciplina de Tópicos",
+        "description": "Vamos aprender Node e React",
+        "id": 3,
+        "completed": false
+    }
+];
 
 /* GET home page. */
 todos.get('/', function (req, res, next) {
