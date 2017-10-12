@@ -15,7 +15,8 @@ const sequelize = new Sequelize(null, null, null, config);
 const Todo = sequelize.define('todo', {
     id: {
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        autoIncrement: true
     },
     title: Sequelize.STRING(50),
     description: Sequelize.STRING(300),
